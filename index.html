@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Plus | Pharmaceutical Excellence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #003399; /* Matching the logo theme */
+            --light-blue: #eef4ff;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        .navbar { background-color: white; border-bottom: 3px solid var(--primary-blue); }
+        .nav-link { color: var(--primary-blue) !important; font-weight: 600; margin: 0 10px; }
+        
+        .carousel-item { height: 500px; background: #002266; color: white; }
+        .carousel-caption { background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; }
+
+        .section-padding { padding: 80px 0; }
+        .bg-light-blue { background-color: var(--light-blue); }
+        
+        .btn-primary { background-color: var(--primary-blue); border: none; }
+        .btn-primary:hover { background-color: #002266; }
+
+        .footer { background-color: var(--primary-blue); color: white; padding: 40px 0; }
+        .footer-logo { filter: brightness(0) invert(1); max-width: 150px; } /* Makes logo white for footer */
+        
+        .feature-box { text-align: center; padding: 20px; transition: 0.3s; }
+        .feature-box i { font-size: 3rem; color: var(--primary-blue); margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="BLUE PLUS" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background: linear-gradient(rgba(0,51,153,0.7), rgba(0,51,153,0.7)), url('https://ventuspharma.com/public/Blogs/HySX15JSo83riDGGseTX5cjGO3A5906yBKwEARDX.jpeg') center/cover;">
+                    <div class="carousel-caption d-none d-md-block text-start">
+                        <h1>Advancing Health for All</h1>
+                        <p>Providing high-quality pharmaceutical solutions through innovation and research.</p>
+                        <a href="product.html" class="btn btn-light btn-lg">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4" style="color: var(--primary-blue);">Empowering Lives through Quality Medicine</h2>
+                    <p class="lead">At Blue Plus, we are dedicated to the development and distribution of essential healthcare products.</p>
+                    <p>Our state-of-the-art facilities and rigorous quality control ensure that every medication we produce meets international safety standards. We believe in affordable healthcare without compromising on efficacy.</p>
+                    <button class="btn btn-primary mt-3">Learn More About Us</button>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80" alt="Laboratory" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light-blue">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-blue);">Why Choose Blue Plus?</h2>
+            <div class="row">
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-microscope"></i>
+                    <h4>Advanced R&D</h4>
+                    <p>Continuous investment in research to bring the latest medical breakthroughs to patients.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Global Standards</h4>
+                    <p>Our manufacturing processes are WHO-GMP certified and strictly monitored.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <h4>Affordable Care</h4>
+                    <p>Making high-quality treatment accessible to diverse populations worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="logo.png" alt="BLUE PLUS" class="footer-logo mb-3">
+                    <p>Excellence in Pharmaceutical solutions. Dedicated to improving global health outcomes.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Quality Assurance</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@blueplus.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +1 (234) 567-890</p>
+                    <div class="mt-3">
+                        <i class="fab fa-facebook me-3"></i>
+                        <i class="fab fa-linkedin me-3"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <p class="text-center mb-0">&copy; 2025 Blue Plus Pharmaceuticals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
